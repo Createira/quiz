@@ -4,3 +4,60 @@ body {
    margin: 0;
    font-family: 'Rubik', sans-serif;
 }
+
+.quiz {
+   margin: 0 auto;
+   width: 600px;
+}
+
+.quiz-questions,
+.quiz-indicator,
+.quiz-results {
+   margin-bottom: 20px;
+}
+
+.quiz-questions-item,
+.quiz-results-item {
+   margin-bottom: 20px;
+
+   &__question {
+      margin-bottom: 20px;
+      font-size: 20px;
+   }
+   &__answers {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+   }
+}
+
+.quiz-indicator {}
+
+.quiz-results {
+   display: none;
+}
+
+.btn-next {}
+
+.btn-restart {
+   display: none;
+}
+
+.questions,
+.indicator,
+.btn-next {
+   display: none;
+}
+
+.indicator,
+.btn-restart {
+   display: block;
+}
+
+.answer--invalid {
+   color: red;
+}
+
+.answer--valid {
+   color: green;
+}
